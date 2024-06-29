@@ -9,21 +9,11 @@ public class User {
     @Column(name = "Id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    // @Column(name = "Name")
     private String name;
-    //@Column(name = "Surname")
     private String surname;
-    //@Column(name = "Age")
     private int age;
 
     public User() {
-    }
-
-    public User(int id, String name, String surname, int age) {
-        this.id = id;
-        this.name = name;
-        this.surname = surname;
-        this.age = age;
     }
 
     public int getId() {
